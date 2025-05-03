@@ -2,7 +2,7 @@ import ollama
 import requests
 import subprocess
 
-GOOGLE_API_KEY = "AIzaSyDXyV7BmpE58FjroyzSJ8eUWs-JGWhs6Os"
+GOOGLE_API_KEY = ""
 
 def get_google_rating(station_name, latitude, longitude):
     """Fetch Google reviews for a charging station using Place Details API."""
@@ -45,7 +45,7 @@ def get_google_rating(station_name, latitude, longitude):
 def get_charging_stations(latitude, longitude, max_results):
     api_url = "https://api.openchargemap.io/v3/poi/"
     params = {
-        "key": "193a3fa5-e53f-47ee-b104-4480bef3dd5b", 
+        "key": "", 
         "latitude": latitude,
         "longitude": longitude,
         "maxresults": max_results,
